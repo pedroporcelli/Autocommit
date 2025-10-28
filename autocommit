@@ -3,9 +3,9 @@
 git add .
 read -p "Enter commit message: " MESSAGE  
 echo "Running git commit"
-git commit -m "$MESSAGE"
-echo "Commit Finished"
+git co\mmit -m "$MESSAGE"
+echo "\033[0;32mCommit Finished\033[0m"
 echo "Pushing to Repo"
 git push origin main
-echo "Done! Commit finished"
+echo "\033[0;32mDone! Commit finished\033[0m"
 

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git add .
+read -p "Enter commit message: " MESSAGE  
+echo "Running git commit"
+git commit -m "$MESSAGE"
+echo "Commit Finished"
+echo "Pushing to Repo"
+git push origin main
+echo "Done! Commit finished"
+

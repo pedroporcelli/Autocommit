@@ -2,11 +2,11 @@
 GREEN="\e[32m"
 RESET="\e[0m"
 git add .
-read -p "Enter commit message: " MESSAGE  
-echo "Running git commit"
+read -p 'Enter commit message: ' MESSAGE  
+echo 'Running git commit'
 git commit -m "$MESSAGE"
-echo "${GREEN}Commit Finished${RESET}"
-echo "Pushing to Repo"
+echo -e '${GREEN}Commit Finished${RESET}'
+echo 'Pushing to Repo'
 git push origin main
-echo "${GREEN}Done! Commit finished${RESET}"
+echo -e '${GREEN}Done! Commit finished${RESET}'
 

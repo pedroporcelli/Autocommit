@@ -1,13 +1,11 @@
 #!/bin/bash
 
-GREEN="\033[32m"
-RESET="\033[0m"
 git add .
 read -p 'Enter commit message: ' MESSAGE  
 printf "Running git commit"
 git commit -m "$MESSAGE"
-printf "${GREEN}Commit Finished${RESET}"
+printf "Commit Finished$"
 printf 'Pushing to Repo'
 git push origin main
-printf "${GREEN}Done! Commit finished${RESET}"
+printf "Done! Commit finished"
 
